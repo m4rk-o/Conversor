@@ -147,6 +147,22 @@ public class calculoActivity extends AppCompatActivity {
                     resultado = Double.parseDouble(Resultado.getText().toString()) - 273;
                     finalres.setText(String.valueOf(resultado));
                 }
+                if(t.equals("mc")){
+                    resultado = Double.parseDouble(Resultado.getText().toString())  * 100;
+                    finalres.setText(String.valueOf(resultado));
+                }
+                if(t.equals("cm")){
+                    resultado = Double.parseDouble(Resultado.getText().toString())  / 100.0;
+                    finalres.setText(String.valueOf(resultado));
+                }
+                if(t.equals("ci")){
+                    resultado = Double.parseDouble(Resultado.getText().toString())  / 2.54;
+                    finalres.setText(String.valueOf(resultado));
+                }
+                if(t.equals("ic")){
+                    resultado = Double.parseDouble(Resultado.getText().toString()) * 2.54;
+                    finalres.setText(String.valueOf(resultado));
+                }
             }
         });
     }
