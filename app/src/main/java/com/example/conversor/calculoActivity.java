@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 public class calculoActivity extends AppCompatActivity {
     TextView titulo = findViewById(R.id.tvSecondtitle);
+    TextView finalres = findViewById(R.id.textViewResultado);
     Button btnUno = findViewById(R.id.btn1);
     Button btnDos = findViewById(R.id.btn2);
     Button btnTres = findViewById(R.id.btn3);
@@ -21,16 +22,16 @@ public class calculoActivity extends AppCompatActivity {
     Button btnCero = findViewById(R.id.btnCero);
     Button btnPunto = findViewById(R.id.btnPunto);
     Button btnIgual = findViewById(R.id.btnIgual);
-
+    String t;
     public String mostrar;
-
+    public double resultado;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calculo);
 
-        String t = getIntent().getExtras().getString("parametro");
+        t = getIntent().getExtras().getString("parametro");
         titulo.setText(t);
 
         final EditText Resultado = findViewById(R.id.editTextValor);
@@ -121,6 +122,23 @@ public class calculoActivity extends AppCompatActivity {
                 mostrar = Resultado.getText().toString();
                 mostrar = mostrar + ".";
                 Resultado.setText(mostrar);
+            }
+        });
+
+        btnIgual.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mostrar = Resultado.getText().toString();
+                mostrar = mostrar + "1";
+                if(t.equals("Celsius to Farenheit")){
+                    resultado = (Double.parseDouble(Resultado.getText().toString()) - 32) / 1.8;
+                    finalres.setText(String.valueOf(resultado));
+                }
+
+                if(t.equals("Celsius to Farenheit")){
+                    resultado = (Double.parseDouble(Resultado.getText().toString()) - 32) / 1.8;
+                    finalres.setText(String.valueOf(resultado));
+                }
             }
         });
     }
