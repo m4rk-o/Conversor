@@ -130,13 +130,13 @@ public class calculoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mostrar = Resultado.getText().toString();
                 mostrar = mostrar + "1";
-                if(t.equals("Celsius to Farenheit")){
+                if(t.equals("fc")){
                     resultado = (Double.parseDouble(Resultado.getText().toString()) - 32) / 1.8;
                     finalres.setText(String.valueOf(resultado));
                 }
 
-                if(t.equals("Celsius to Farenheit")){
-                    resultado = (Double.parseDouble(Resultado.getText().toString()) - 32) / 1.8;
+                if(t.equals("cf")){
+                    resultado = (Double.parseDouble(Resultado.getText().toString()) * 1.8) + 32;
                     finalres.setText(String.valueOf(resultado));
                 }
             }

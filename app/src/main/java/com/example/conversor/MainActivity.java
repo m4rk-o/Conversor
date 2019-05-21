@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", CelFar.getText().toString());
+                intent.putExtra("parametro", "cf");
                 startActivityForResult(intent, 0);
             }
         });
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", FarCel.getText().toString());
+                intent.putExtra("parametro", "fc");
                 startActivityForResult(intent, 0);
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", Celkel.getText().toString());
+                intent.putExtra("parametro", "ck");
                 startActivityForResult(intent, 0);
             }
         });
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", kelCel.getText().toString());
+                intent.putExtra("parametro", "kc");
                 startActivityForResult(intent, 0);
             }
         });
@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", metcenti.getText().toString());
+                intent.putExtra("parametro", "mc");
                 startActivityForResult(intent, 0);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", centmeter.getText().toString());
+                intent.putExtra("parametro", "cm");
                 startActivityForResult(intent, 0);
             }
         });
@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", centinch.getText().toString());
+                intent.putExtra("parametro", "ci");
                 startActivityForResult(intent, 0);
             }
         });
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(v.getContext(), calculoActivity.class);
-                intent.putExtra("parametro", inchcenti.getText().toString());
+                intent.putExtra("parametro", "ic");
                 startActivityForResult(intent, 0);
             }
         });
