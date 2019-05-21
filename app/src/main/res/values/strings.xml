@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Conversor</string>
+
+    <string name="titulo">Units Conversor</string>
+    <string name="titulo_temp">Temperature Units</string>
+    <string name="titulo_dist">Distance Units</string>
+
+    <string name="celsius_faren">Celsius to Farenheit</string>
+    <string name="faren_celsius">Farenheit to Celsius</string>
+    <string name="celsius_kelvin">Celsius to Kelvin</string>
+    <string name="kelvin_celsius">Kelvin to Celsius</string>
+
+    <string name="meter_centi">Meter to centimeter</string>
+    <string name="centi_meter">Centimeter to meter</string>
+    <string name="centi_inch">Centimeter to inch</string>
+    <string name="inch_centi">Inch to Centimeter</string>
+
+    <string name="unit">Unit</string>
+    <string name="calculo">Calculate</string>
+    <string name="tituloRes">Result</string>
+</resources>

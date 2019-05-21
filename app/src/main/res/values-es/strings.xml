@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Conversion</string>
+
+    <string name="titulo">Conversor de Unidades</string>
+    <string name="titulo_temp">Unidades de Temperatura</string>
+    <string name="titulo_dist">Unidades de Distancia</string>
+
+    <string name="celsius_faren">Celsius a Farenheit</string>
+    <string name="faren_celsius">Farenheit a Celsius</string>
+    <string name="celsius_kelvin">Celsius a Kelvin</string>
+    <string name="kelvin_celsius">Kelvin a Celsius</string>
+
+    <string name="meter_centi">Metro a centimetro</string>
+    <string name="centi_meter">Centimetro a metro</string>
+    <string name="centi_inch">Centimetro a pulgada</string>
+    <string name="inch_centi">Pulgada a centimetro</string>
+
+    <string name="unit">Unidad</string>
+    <string name="calculo">Calcular</string>
+    <string name="tituloRes">Resultado</string>
+</resources>
