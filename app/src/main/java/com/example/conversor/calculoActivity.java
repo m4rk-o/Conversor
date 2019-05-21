@@ -139,6 +139,14 @@ public class calculoActivity extends AppCompatActivity {
                     resultado = (Double.parseDouble(Resultado.getText().toString()) * 1.8) + 32;
                     finalres.setText(String.valueOf(resultado));
                 }
+                if(t.equals("ck")){
+                    resultado = Double.parseDouble(Resultado.getText().toString()) + 273;
+                    finalres.setText(String.valueOf(resultado));
+                }
+                if(t.equals("kc")){
+                    resultado = Double.parseDouble(Resultado.getText().toString()) - 273;
+                    finalres.setText(String.valueOf(resultado));
+                }
             }
         });
     }
